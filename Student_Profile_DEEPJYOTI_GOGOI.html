@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Profile — DEEPJYOTI GOGOI</title>
+  <style>
+    :root{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#222}
+    body{margin:0;background:#f6f8fb;padding:24px}
+    .card{max-width:900px;margin:18px auto;background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.08);overflow:hidden}
+    header{display:flex;gap:20px;align-items:center;padding:22px 28px;border-bottom:1px solid #eef2f7}
+    .logo{width:160px;height:auto}
+    .title{flex:1}
+    h1{margin:0;font-size:20px;letter-spacing:0.2px}
+    p.lead{margin:6px 0 0;color:#475569}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:20px 28px}
+    .section{background:#fbfdff;border:1px solid #eef2f7;padding:14px;border-radius:10px}
+    .section h2{margin:0 0 8px;font-size:14px;color:#0f172a}
+    .row{display:flex;gap:10px;align-items:center;margin:8px 0}
+    .label{min-width:150px;font-weight:600;color:#0f172a}
+    .value{flex:1;color:#0b1220}
+    .full-width{grid-column:1/-1}
+    .actions{display:flex;gap:8px;padding:18px 28px;border-top:1px solid #eef2f7;justify-content:flex-end}
+    button{background:#0b5cff;border:none;color:#fff;padding:10px 14px;border-radius:8px;font-weight:600;cursor:pointer}
+    .muted{color:#475569;font-size:13px}
+    .avatar{width:120px;height:120px;border-radius:8px;object-fit:cover;background:linear-gradient(90deg,#eef2ff,#fff)}
+    @media (max-width:720px){.grid{grid-template-columns:1fr;}.label{min-width:120px}}
+    @media print{body{background:#fff;padding:0}header .logo{display:none}button{display:none}}
+  </style>
+</head>
+<body>
+  <div class="card" id="profile-card">
+    <header>
+      <!-- FAIMER logo (if not needed remove img element) -->
+      <img class="logo" src="https://www.dropbox.com/scl/fi/ka36b3b7r9fuk6pqdm59o/FAIMER_Logo_Horizontal_BLACK_w-Tag.svg?rlkey=1mq6b1exwre48ubnhv5ykzq21&st=esr2faf4&raw=1" alt="FAIMER Logo">
+      <div class="title">
+        <h1>Student Profile</h1>
+        <p class="lead">Official details (as per NEET - UG 2025 Score Card)</p>
+      </div>
+      <img class="avatar" src="https://www.dropbox.com/scl/fi/e4egtonvj1784cg6p86bv/WhatsApp-Image-2025-07-24-at-18..jpg?rlkey=fhexcylyaq3h1wempb2ie2dy3&st=wb4ioup5&raw=1" alt="Candidate Photo">
+    </header>
+
+    <div class="grid">
+      <div class="section">
+        <h2>Personal Details</h2>
+        <div class="row"><div class="label">Full Name</div><div class="value">DEEPJYOTI GOGOI</div></div>
+        <div class="row"><div class="label">Father's Name</div><div class="value">LAKHINDRA GOGOI</div></div>
+        <div class="row"><div class="label">Date of Birth</div><div class="value">09/01/2003</div></div>
+        <div class="row"><div class="label">Gender</div><div class="value">MALE</div></div>
+        <div class="row"><div class="label">Country</div><div class="value">INDIA</div></div>
+        <div class="row"><div class="label">State</div><div class="value">Assam</div></div>
+      </div>
+
+      <div class="section">
+        <h2>Contact</h2>
+        <div class="row"><div class="label">Mobile No.</div><div class="value">7002739903</div></div>
+        <div class="row"><div class="label">Email</div><div class="value">deepgogoi217@gmail.com</div></div>
+      </div>
+
+      <div class="section full-width">
+        <h2>Permanent Address (as in Permanent Residentship Certificate)</h2>
+        <div class="row"><div class="label">Address Line 1</div><div class="value">LANGBOI, BALIPATHAR</div></div>
+        <div class="row"><div class="label">Address Line 2</div><div class="value">LANGBOI</div></div>
+        <div class="row"><div class="label">Address Line 3</div><div class="value">BALIPATHAR</div></div>
+        <div class="row"><div class="label">City</div><div class="value">DIPHU</div></div>
+        <div class="row"><div class="label">District</div><div class="value">KARBI ANGLONG</div></div>
+        <div class="row"><div class="label">Pin Code</div><div class="value">782470</div></div>
+        <div class="row"><div class="label">State</div><div class="value">ASSAM</div></div>
+      </div>
+
+      <div class="section">
+        <h2>NEET - UG 2025</h2>
+        <div class="row"><div class="label">Roll No.</div><div class="value">1410101214</div></div>
+        <div class="row"><div class="label">Application No.</div><div class="value">250411327769</div></div>
+        <div class="row"><div class="label">Score (out of 720)</div><div class="value">442</div></div>
+        <div class="row"><div class="label">All India Rank</div><div class="value">136220</div></div>
+      </div>
+
+      <div class="section">
+        <h2>Remarks</h2>
+        <p class="muted">This profile was prepared from the details provided by the candidate. Please verify all entries against official documents (NEET Score Card, Permanent Residentship Certificate) before using for application or counselling purposes.</p>
+      </div>
+
+    </div>
+
+    <div class="actions">
+      <button onclick="window.print()">Print / Save as PDF</button>
+      <a href="https://www.dropbox.com/scl/fi/gvfjlownbspm7rxvh16vd/counselling_russia_2025.pdf?rlkey=b4vhae7azohjh3eojo2w45xlv&st=djde1iuo&raw=1" style="text-decoration:none"><button style="background:#16a34a">COUNSELLING RESULTS 2025</button></a>
+    </div>
+  </div>
+</body>
+</html>
